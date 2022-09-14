@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@radix-ui/colors': ^0.1.8
   astro: ^1.2.2
   autoprefixer: ^10.4.10
   postcss: ^8.4.16
@@ -12,6 +13,7 @@ dependencies:
   astro: 1.2.2
 
 devDependencies:
+  '@radix-ui/colors': 0.1.8
   autoprefixer: 10.4.10_postcss@8.4.16
   postcss: 8.4.16
   prettier: 2.7.1
@@ -468,6 +470,10 @@ packages:
       '@proload/core': 0.3.3
       tsm: 2.2.2
     dev: false
+
+  /@radix-ui/colors/0.1.8:
+    resolution: {integrity: sha512-jwRMXYwC0hUo0mv6wGpuw254Pd9p/R6Td5xsRpOmaWkUHlooNWqVcadgyzlRumMq3xfOTXwJReU0Jv+EIy4Jbw==}
+    dev: true
 
   /@types/acorn/4.0.6:
     resolution: {integrity: sha512-veQTnWP+1D/xbxVrPC3zHnCZRjSrKfhbMUlEA43iMZLu7EsnTtkJklIuwrCPbOi8YkvDQAiW05VQQFvvz9oieQ==}

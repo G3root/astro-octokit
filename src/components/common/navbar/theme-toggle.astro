@@ -1,0 +1,37 @@
+---
+import { Icon } from "astro-icon";
+---
+
+<button
+  type="button"
+  class="flex items-center p-1 rounded-md"
+  aria-label="toggle theme"
+  id="dark-mode-toggle"
+>
+  <span class="dark:hidden block">
+    <Icon name="feather:moon" aria-hidden class="h-5 w-5" />
+  </span>
+  <span class="dark:block hidden">
+    <Icon name="feather:sun" aria-hidden class="h-5 w-5" />
+  </span>
+</button>
+
+<script>
+  const darkModeToggle = document.querySelector("#dark-mode-toggle");
+  function toggleDarkMode() {
+    const root = document.documentElement;
+    const themeAttribute = root.getAttribute("data-theme");
+    if (!themeAttribute || themeAttribute === "light") {
+      root.setAttribute("data-theme", "dark");
+      localStorage.setItem("octokit-theme", "dark");
+    } else {
+      root.setAttribute("data-theme", "light");
+      localStorage.setItem("octokit-theme", "light");
+    }
+  }
+  if (darkModeToggle) {
+    darkModeToggle.addEventListener("click", () => {
+      toggleDarkMode();
+    });
+  }
+</script>

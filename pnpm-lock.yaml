@@ -3,9 +3,12 @@ lockfileVersion: 5.4
 specifiers:
   '@octokit/rest': ^19.0.4
   '@radix-ui/colors': ^0.1.8
+  '@types/marked': ^4.0.7
   astro: ^1.2.2
   astro-icon: ^0.7.3
   autoprefixer: ^10.4.10
+  front-matter: ^4.0.2
+  marked: ^4.1.0
   postcss: ^8.4.16
   prettier: ^2.7.1
   prettier-plugin-astro: ^0.5.4
@@ -15,9 +18,12 @@ dependencies:
   '@octokit/rest': 19.0.4
   astro: 1.2.2
   astro-icon: 0.7.3
+  front-matter: 4.0.2
+  marked: 4.1.0
 
 devDependencies:
   '@radix-ui/colors': 0.1.8
+  '@types/marked': 4.0.7
   autoprefixer: 10.4.10_postcss@8.4.16
   postcss: 8.4.16
   prettier: 2.7.1
@@ -670,6 +676,10 @@ packages:
   /@types/json5/0.0.30:
     resolution: {integrity: sha512-sqm9g7mHlPY/43fcSNrCYfOeX9zkTTK+euO5E6+CVijSMm5tTjkVdwdqRkY3ljjIAf8679vps5jKUoJBCLsMDA==}
     dev: false
+
+  /@types/marked/4.0.7:
+    resolution: {integrity: sha512-eEAhnz21CwvKVW+YvRvcTuFKNU9CV1qH+opcgVK3pIMI6YZzDm6gc8o2vHjldFk6MGKt5pueSB7IOpvpx5Qekw==}
+    dev: true
 
   /@types/mdast/3.0.10:
     resolution: {integrity: sha512-W864tg/Osz1+9f4lrGTZpCSO5/z4608eUp19tbozkq2HJK6i3z1kT0H9tlADXuYIb1YYOBByU4Jsqkk75q48qA==}
@@ -1623,6 +1633,12 @@ packages:
     resolution: {integrity: sha512-MhLuK+2gUcnZe8ZHlaaINnQLl0xRIGRfcGk2yl8xoQAfHrSsL3rYu6FCmBdkdbhc9EPlwyGHewaRsvwRMJtAlA==}
     dev: true
 
+  /front-matter/4.0.2:
+    resolution: {integrity: sha512-I8ZuJ/qG92NWX8i5x1Y8qyj3vizhXS31OxjKDu3LKP+7/qBgfIKValiZIEwoVoJKUHlhWtYrktkxV1XsX+pPlg==}
+    dependencies:
+      js-yaml: 3.14.1
+    dev: false
+
   /fsevents/2.3.2:
     resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
@@ -2037,6 +2053,12 @@ packages:
 
   /markdown-table/3.0.2:
     resolution: {integrity: sha512-y8j3a5/DkJCmS5x4dMCQL+OR0+2EAq3DOtio1COSHsmW2BGXnNCK3v12hJt1LrUz5iZH5g0LmuYOjDdI+czghA==}
+    dev: false
+
+  /marked/4.1.0:
+    resolution: {integrity: sha512-+Z6KDjSPa6/723PQYyc1axYZpYYpDnECDaU6hkaf5gqBieBkMKYReL5hteF2QizhlMbgbo8umXl/clZ67+GlsA==}
+    engines: {node: '>= 12'}
+    hasBin: true
     dev: false
 
   /mdast-util-definitions/5.1.1:

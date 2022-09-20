@@ -13,10 +13,13 @@
   "dependencies": {
     "@octokit/rest": "^19.0.4",
     "astro": "^1.2.2",
-    "astro-icon": "^0.7.3"
+    "astro-icon": "^0.7.3",
+    "front-matter": "^4.0.2",
+    "marked": "^4.1.0"
   },
   "devDependencies": {
     "@radix-ui/colors": "^0.1.8",
+    "@types/marked": "^4.0.7",
     "autoprefixer": "^10.4.10",
     "postcss": "^8.4.16",
     "prettier": "^2.7.1",

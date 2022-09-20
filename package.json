@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@octokit/rest": "^19.0.4",
+    "@sindresorhus/slugify": "^2.1.0",
     "astro": "^1.2.2",
     "astro-icon": "^0.7.3",
     "front-matter": "^4.0.2",
